@@ -22,3 +22,31 @@ This repository contains my personal React revision journey, where I revisit the
 - Custom Hooks
 - React Router
 - Small Practice Projects
+
+## React vite setup and tailwindcss setup commands
+
+```bash
+npm create vite@latest my-react-app -- --template react
+cd my-react-app
+npm install
+npm install tailwindcss @tailwindcss/vite
+
+
+```
+vite.config.js
+
+```javascript
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [ tailwindcss(),react()],
+})
+``` 
+
+index.css
+
+```css
+@import "tailwindcss";
