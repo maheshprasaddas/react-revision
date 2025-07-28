@@ -26,7 +26,7 @@ This repository contains my personal React revision journey, where I revisit the
 ## React vite setup and tailwindcss setup commands
 
 ```bash
-npm create vite@latest my-react-app -- --template react
+npm create vite@latest
 cd my-react-app
 npm install
 npm install tailwindcss @tailwindcss/vite
